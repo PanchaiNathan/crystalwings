@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - AIvent - AI Event, Conference and Meetup Website Template</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="AIvent - Contact Us" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-rosegold.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Transparent Header Styling */
+        /* Ensure header is transparent by default */
+        header.transparent {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-bottom: none !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Make sure the header elements are visible on transparent background */
+        header.transparent #mainmenu a {
+            text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Transparent Header on Scroll */
+        header.smaller {
+            background: rgba(45, 26, 28, 0.7) !important; /* Using var(--bg-dark-1) with transparency */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.3) !important;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Add subtle rose gold glow to header on scroll */
+        header.smaller::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, transparent, rgba(var(--primary-color-rgb), 0.5), transparent);
+            opacity: 0.5;
+        }
+        
+        .success {
+            color: #28a745;
+            background-color: rgba(40, 167, 69, 0.1);
+            border: 1px solid #28a745;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .error {
+            color: #dc3545;
+            background-color: rgba(220, 53, 69, 0.1);
+            border: 1px solid #dc3545;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body class="dark-scheme">
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo.webp" alt="">
+                                        <img class="logo-scroll" src="images/logo.webp" alt="">
+                                        <img class="logo-mobile" src="images/logo.webp" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+
+                            <div class="de-flex-col">
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a>
+                                        </li>
+                                        <li><a class="menu-item" href="index.html#section-about">About</a></li>
+                                        <li><a class="menu-item" href="index.html#section-why-attend">Why Attend</a></li>
+                                        <li><a class="menu-item" href="index.html#section-speakers">Speakers</a></li>
+                                        <li><a class="menu-item" href="index.html#section-schedule">Schedule</a></li>
+                                        <li><a class="menu-item" href="index.html#section-tickets">Tickets</a></li>
+                                        <li><a class="menu-item" href="index.html#section-venue">Venue</a></li>
+                                        <li><a class="menu-item" href="index.html#section-faq">FAQ</a></li>
+                                        <li><a class="menu-item" href="news.html">Pages</a>
+                                            <ul>
+                                                <li><a class="menu-item" href="tickets.html">Tickets</a></li>
+                                                <li><a class="menu-item" href="news.html">News</a></li>
+                                                <li><a class="menu-item" href="news-single.html">News Single</a></li>
+                                                <li><a class="menu-item active" href="contact.html">Contact</a>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="de-flex-col">
+                                <a class="btn-main fx-slide w-100" href="tickets.html"><span>Buy Tickets</span></a>
+
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- section begin -->
+        <section id="subheader" class="jarallax text-light">
+            <div class="de-gradient-edge-bottom"></div>
+            <img src="images/background/subheader.webp" class="jarallax-img" alt="">
+            <div class="container z-1000">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="subtitle wow fadeInUp mb-3">Get in Touch</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+        <section id="section-contact" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInRight">
+                        <div class="subtitle">Contact Information</div>
+                        <h2>Get in Touch with Us</h2>
+                        <p>Have questions about the AI Summit 2025? Want to become a sponsor or speaker? Reach out to our team and we'll get back to you as soon as possible.</p>
+                        
+                        <div class="spacer-20"></div>
+                        
+                        <div class="de-box mb-3 p-4">
+                            <i class="icofont-location-pin id-color"></i>
+                            <h4>Our Location</h4>
+                            <p class="mb-0">121 AI Blvd, San Francisco BCA 94107</p>
+                        </div>
+                        
+                        <div class="de-box mb-3 p-4">
+                            <i class="icofont-email id-color"></i>
+                            <h4>Email Us</h4>
+                            <p class="mb-0">contact@aivent.com</p>
+                        </div>
+                        
+                        <div class="de-box mb-3 p-4">
+                            <i class="icofont-phone id-color"></i>
+                            <h4>Call Us</h4>
+                            <p class="mb-0">+1 (800) 123-4567</p>
+                        </div>
+                        
+                        <div class="de-box mb-3 p-4">
+                            <i class="icofont-clock-time id-color"></i>
+                            <h4>Working Hours</h4>
+                            <p class="mb-0">Monday - Friday: 9:00 AM - 5:00 PM PST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <div class="subtitle">Send a Message</div>
+                        <h2>Contact Form</h2>
+                        
+                        <div id="contact_form_wrap">
+                            <!-- Status Messages -->
+                            <div id="success_message" class="success" style="display:none;">Thank you! Your message has been received. We'll get back to you soon.</div>
+                            <div id="mail_fail" class="error" style="display:none;">Sorry, error occurred while sending your message.</div>
+                            
+                            <!-- Form with both AJAX and direct submission capabilities -->
+                            <form name="contact_form" id="contact_form" class="form-default" method="post" action="send-email.php">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="field-set">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="field-set">
+                                            <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="spacer-20"></div>
+                                        <input type="submit" id="send_message" value="Send Message" class="btn-main">
+                                        <div class="mt-3">
+                                            <small class="text-muted">You can also email us directly at <a href="mailto:contact@aivent.com">contact@aivent.com</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section begin -->
+        <section id="section-map" class="no-top no-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-col">
+                            <div class="footer-logo">
+                                <img src="images/logo.webp" alt="">
+                            </div>
+                            <div class="footer-text">
+                                <p>AIvent is the premier global gathering for AI innovators, researchers, and industry leaders. Join us for five days of cutting-edge insights, hands-on workshops, and unparalleled networking opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="footer-col">
+                            <div class="footer-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-item">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>121 AI Blvd, San Francisco BCA 94107</span>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+1 (800) 123-4567</span>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <i class="fa fa-envelope"></i>
+                                    <span>contact@aivent.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <span>Copyright 2025 - AIvent by Shashwatha Groups</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/Shashwathagroups.js"></script>
+    <script src="js/validation-contact.js"></script>
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+        
+        // Check for status parameters when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            var status = getUrlParameter('status');
+            var message = getUrlParameter('message');
+            
+            if (status === 'success') {
+                document.getElementById('success_message').style.display = 'block';
+                document.getElementById('contact_form').style.display = 'none';
+            } else if (status === 'error') {
+                var errorElement = document.getElementById('mail_fail');
+                if (message) {
+                    errorElement.textContent = message;
+                }
+                errorElement.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

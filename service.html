@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crystal Wings - Aviation Services</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Crystal Wings Aviation Services" name="description" >
+    <meta content="aircraft management, aircraft leasing, crew management, aviation services" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-rosegold.css" rel="stylesheet" type="text/css" >
+    <style>
+        /* Custom Rose Gold Styling */
+        /* Transparent Header Styling */
+        /* Ensure header is transparent by default */
+        header.transparent {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-bottom: none !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Make sure the header elements are visible on transparent background */
+        header.transparent #mainmenu a {
+            text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Transparent Header on Scroll */
+        header.smaller {
+            background: rgba(45, 26, 28, 0.7) !important; /* Using var(--bg-dark-1) with transparency */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.3) !important;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Add subtle rose gold glow to header on scroll */
+        header.smaller::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, transparent, rgba(var(--primary-color-rgb), 0.5), transparent);
+            opacity: 0.5;
+        }
+        
+        .hover-border-color:hover {
+            border-color: var(--primary-color) !important;
+            box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-main {
+            background: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-main:hover {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        h3 {
+            color: var(--primary-color);
+        }
+        
+        .small-border.bg-color {
+            background: var(--primary-color);
+            width: 50px;
+            height: 3px;
+            margin: 15px 0;
+        }
+        
+        .service-card-highlight {
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .hover-color:hover {
+            color: var(--primary-color) !important;
+            transition: all 0.3s ease;
+        }
+    </style>
+
+</head>
+
+<body class="dark-scheme">
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo.webp" alt="" >
+                                        <img class="logo-scroll" src="images/logo.webp" alt="" >
+                                        <img class="logo-mobile" src="images/logo.webp" alt="" >
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+
+                            <div class="de-flex-col">
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item active" href="service.html">Services</a></li>
+                                        <li><a class="menu-item" href="#">Fleet</a></li>
+                                        <li><a class="menu-item" href="#">Investments</a></li>                                     
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="de-flex-col">
+                                <a class="btn-main fx-slide w-100" href="contact.html"><span>Contact Us</span></a>
+
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="section-hero" class="section-dark no-top no-bottom text-light jarallax relative mh-600 jarallax" data-video-src="mp4:video/5.mp4">
+            <!-- <img src="images/background/8.jpg" class="jarallax-img" alt=""> -->
+            <div class="sw-overlay op-5"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.3) 0%, rgba(var(--secondary-color-rgb), 0.3) 100%);"></div>
+            <div class="abs w-80 bottom-10 z-2 w-100">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between gx-5">
+                        <div class="col-lg-6">
+                            <div class="relative wow mask-right">
+                                <div class="text-start">
+                                    <h1 class="fs-96 text-uppercase fs-sm-10vw mb-0 lh-1">Our Services</h1>
+                                    <div class="small-border bg-color mt-3" style="width: 100px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 wow fadeInRight" data-wow-delay=".3s">
+                            <p class="mb-0" style="border-left: 4px solid var(--primary-color); padding-left: 20px;">Comprehensive aviation solutions tailored to your needs. From aircraft management to leasing and crew services, we deliver excellence in every aspect of aviation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Aircraft Management Section -->
+        <section id="section-aircraft-management" class="bg-dark section-dark text-light pt-80 relative" aria-label="section">
+            <div class="container relative z-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="subtitle wow fadeInUp id-color" data-wow-delay=".2s">Our Services</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Aircraft Management</h2>
+                        <div class="small-border bg-color"></div>
+                    </div>
+                </div>
+                
+                <div class="row gy-4 gx-5 justify-content-center mt-4">
+                    <!-- Service Item 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-airplane-alt id-color mb-3"></i>
+                                    <h3 class="mb-3">Flight Operations</h3>
+                                </div>
+                                <div class="small-border bg-color mb-4"></div>
+                                <p>Comprehensive scheduling & planning services to ensure your aircraft operations run smoothly and efficiently at all times.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Item 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-tools id-color mb-3"></i>
+                                    <h3 class="mb-3">Maintenance</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Rigorous safety & compliance protocols to keep your aircraft in peak condition and ensure all regulatory requirements are met.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Item 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-law-document id-color mb-3"></i>
+                                    <h3 class="mb-3">Regulations</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Expert legal adherence services to navigate the complex regulatory environment of international aviation operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Item 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-money id-color mb-3"></i>
+                                    <h3 class="mb-3">Finance</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Strategic budgeting & cost management to optimize your aircraft's financial performance and maximize return on investment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Item 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-shield id-color mb-3"></i>
+                                    <h3 class="mb-3">Insurance</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Comprehensive risk coverage solutions tailored to your specific aircraft and operational needs for complete peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Item 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-users-alt-5 id-color mb-3"></i>
+                                    <h3 class="mb-3">Crew</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Access to highly trained aviation professionals who meet the highest standards of safety, service, and operational excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aircraft Investment Section -->
+        <section id="section-aircraft-investment" class="bg-dark section-dark text-light pt-80 relative" aria-label="section">
+            <div class="container relative z-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Aircraft Investment</h2>
+                        <div class="small-border bg-color"></div>
+                    </div>
+                </div>
+                
+                <div class="row gy-4 gx-5 justify-content-center mt-4">
+                    <!-- Investment Item 1 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-calendar id-color mb-3"></i>
+                                    <h3 class="mb-3">Short/Long-Term</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Flexible lease terms designed to accommodate your specific operational timeline and business requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Investment Item 2 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-package id-color mb-3"></i>
+                                    <h3 class="mb-3">ACMI</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Full-service lease options including Aircraft, Crew, Maintenance, and Insurance for a complete turnkey aviation solution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Investment Item 3 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-airplane id-color mb-3"></i>
+                                    <h3 class="mb-3">Fleet Solutions</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Strategic solutions for rapid fleet expansion to meet growing demand or capitalize on emerging market opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Investment Item 4 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-paper id-color mb-3"></i>
+                                    <h3 class="mb-3">Dry/Wet Lease</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Versatile leasing options to suit all operational needs, from aircraft-only arrangements to fully-staffed solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crew Management Section -->
+        <section id="section-crew-management" class="bg-dark section-dark text-light pt-80 relative" aria-label="section">
+            <div class="container relative z-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Crew Management</h2>
+                        <div class="small-border bg-color"></div>
+                    </div>
+                </div>
+                
+                <div class="row gy-4 gx-5 justify-content-center mt-4">
+                    <!-- Crew Item 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-search-job id-color mb-3"></i>
+                                    <h3 class="mb-3">Recruitment</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Specialized crew recruitment services to identify and secure the most qualified aviation professionals for your operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Crew Item 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-support id-color mb-3"></i>
+                                    <h3 class="mb-3">Operational Support</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Comprehensive staff support services to ensure your crew operates at peak efficiency with all necessary resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Crew Item 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-certificate-alt-1 id-color mb-3"></i>
+                                    <h3 class="mb-3">Compliance</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Rigorous management of licenses & documentation to ensure all crew members maintain current qualifications and certifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aircraft Leasing Section -->
+        <section id="section-aircraft-leasing" class="bg-dark section-dark text-light pt-80 pb-80 relative" aria-label="section">
+            <div class="container relative z-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Aircraft Leasing</h2>
+                        <div class="small-border bg-color"></div>
+                    </div>
+                </div>
+                
+                <div class="row gy-4 gx-5 justify-content-center mt-4">
+                    <!-- Leasing Item 1 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-chart-growth id-color mb-3"></i>
+                                    <h3 class="mb-3">Opportunities</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Strategic market analysis and ROI projections to identify and capitalize on the most promising aviation investment opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Leasing Item 2 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-handshake-deal id-color mb-3"></i>
+                                    <h3 class="mb-3">Services</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Comprehensive aircraft purchase & sale advisory services to guide you through every step of the acquisition or divestiture process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Leasing Item 3 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-users-social id-color mb-3"></i>
+                                    <h3 class="mb-3">Fractional Ownership</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Innovative programs offering the benefits of aircraft ownership with optimized costs through legal and financial structuring.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Leasing Item 4 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="relative overflow-hidden h-100 border-white-op-3 rounded-1 bg-blur hover-border-color">
+                            <div class="p-40 z-2">
+                                <div class="text-center">
+                                    <i class="fs-60 icofont-chart-flow id-color mb-3"></i>
+                                    <h3 class="mb-3">Residual Value Management</h3>
+                                </div>
+                                <div class="border-white-bottom-op-2 mb-4"></div>
+                                <p>Strategic asset management and resale planning to protect and maximize the long-term value of your aviation investments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="section-cta" class="bg-dark section-dark text-light pt-0 pb-80 relative" aria-label="section">
+            <div class="container relative z-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="relative overflow-hidden border-color rounded-1 bg-blur p-40" style="border: 2px solid var(--primary-color); background: rgba(var(--primary-color-rgb), 0.1);">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-0">Ready to elevate your aviation experience?</h2>
+                                    <p class="mb-0">Contact us today to discuss how our comprehensive services can meet your specific needs.</p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                                    <a href="contact.html" class="btn-main" style="background: var(--primary-color); border: 2px solid var(--primary-color);"><span>Contact Us</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer begin -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget">
+                            <h4>About Crystal Wings</h4>
+                            <div class="small-border bg-color"></div>
+                            <p>Crystal Wings is a premier aviation services company providing comprehensive aircraft management, leasing, and crew solutions to clients worldwide.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget">
+                            <h4>Our Services</h4>
+                            <div class="small-border bg-color"></div>
+                            <ul class="ul-style-2">
+                                <li><a href="#section-aircraft-management" class="hover-color">Aircraft Management</a></li>
+                                <li><a href="#section-aircraft-investment" class="hover-color">Aircraft Investment</a></li>
+                                <li><a href="#section-crew-management" class="hover-color">Crew Management</a></li>
+                                <li><a href="#section-aircraft-leasing" class="hover-color">Aircraft Leasing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget">
+                            <h4>Contact</h4>
+                            <div class="small-border bg-color"></div>
+                            <address class="s1">
+                                <span><i class="id-color icofont-google-map"></i>121 Aviation Blvd, San Francisco BCA 94107</span>
+                                <span><i class="id-color icofont-phone"></i>+1 (123) 456-7890</span>
+                                <span><i class="id-color icofont-envelope"></i><a href="mailto:contact@crystalwings.com" class="hover-color">contact@crystalwings.com</a></span>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index.html">
+                                        Copyright © 2025 - Crystal Wings
+                                    </a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+    
+    <!-- Javascript Files
+    ================================================== -->
+   <script src="js/vendors.js"></script>
+    <script src="js/Shashwathagroups.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/custom-marquee.js"></script>
+
+
+</body>
+</html>
