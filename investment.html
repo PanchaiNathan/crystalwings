@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crystal Wings - Private Jet Investment</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Crystal Wings - Luxury Private Jet Investment Opportunities" name="description" >
+    <meta content="private jet, investment, returns, aviation investment, asset-backed, quarterly payouts" name="keywords" >
+    <meta content="Crystal Wings" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-rosegold.css" rel="stylesheet" type="text/css" >
+    
+    <style>
+        /* Transparent Header Styling */
+        /* Ensure header is transparent by default */
+        header.transparent {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-bottom: none !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Make sure the header elements are visible on transparent background */
+        header.transparent #mainmenu a {
+            text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Transparent Header on Scroll */
+        header.smaller {
+            background: rgba(45, 26, 28, 0.7) !important; /* Using var(--bg-dark-1) with transparency */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.3) !important;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease !important;
+        }
+        
+        /* Add subtle rose gold glow to header on scroll */
+        header.smaller::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, transparent, rgba(var(--primary-color-rgb), 0.5), transparent);
+            opacity: 0.5;
+        }
+
+        /* Investment feature boxes */
+        .investment-feature {
+            background: rgba(45, 26, 28, 0.5);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .investment-feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(var(--primary-color-rgb), 0.5);
+        }
+        
+        .investment-feature h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .investment-feature p {
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+
+        /* Security features */
+        .security-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .security-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .security-item .number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-right: 20px;
+            line-height: 1;
+            min-width: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .security-item:hover .number {
+            transform: scale(1.2);
+        }
+        
+        .security-item .content h4 {
+            margin-bottom: 10px;
+        }
+        
+        /* Image animation effects */
+        .wow.scaleIn img {
+            transition: all 0.8s ease;
+        }
+        
+        .wow.scaleIn:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Investment feature animation */
+        .investment-feature {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .investment-feature::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        
+        .investment-feature:hover::after {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body class="dark-scheme">
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo.webp" alt="" >
+                                        <img class="logo-scroll" src="images/logo.webp" alt="" >
+                                        <img class="logo-mobile" src="images/logo.webp" alt="" >
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+
+                            <div class="de-flex-col">
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item" href="service.html">Services</a></li>
+                                        <li><a class="menu-item" href="#">Fleet</a></li>
+                                        <li><a class="menu-item" href="#">Destinations</a></li>
+                                        <li><a class="menu-item active" href="investment.html">Investment</a></li>
+                                       </ul>
+                                </div>
+                            </div>
+
+                            <div class="de-flex-col">
+                                <a class="btn-main fx-slide w-100" href="contact.html"><span>Contact Us</span></a>
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="section-hero" class="section-dark no-top no-bottom text-light jarallax relative mh-500" data-jarallax-video="mp4:video/6.mp4">
+            <div class="sw-overlay op-8"></div>
+            <div class="abs abs-centered z-2 w-80">
+                <div class="container wow scaleIn" data-wow-duration="3s">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <h1 class="ultra-big mb-4">Investment Opportunities</h1>
+                            <p class="lead">Secure your future with our innovative private jet investment model offering exceptional returns and exclusive benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Model Section -->
+        <section id="section-investment-model" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="subtitle wow fadeInUp mb-3">Investment Model</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Premium Aviation Investment</h2>
+                        <p class="lead mb-0 wow fadeInUp">Our asset-backed investment model offers secured returns with the added benefit of access to luxury private jet services.</p>
+                    </div>
+                </div>
+
+                <div class="spacer-single"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="investment-feature wow fadeInUp">
+                            <h3>Quarterly Payouts</h3>
+                            <p>Enjoy regular quarterly distributions, providing consistent income from your investment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="investment-feature wow fadeInUp" data-wow-delay=".2s">
+                            <h3>Secured Annual Returns</h3>
+                            <p>Our investment model provides reliable annual returns backed by tangible aviation assets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="investment-feature wow fadeInUp" data-wow-delay=".4s">
+                            <h3>Asset-Backed Investments</h3>
+                            <p>Your investment is secured by our fleet of luxury private jets, providing real asset value.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="investment-feature wow fadeInUp" data-wow-delay=".6s">
+                            <h3>Returns Up to 26%</h3>
+                            <p>Our efficient operational model allows us to offer exceptional returns of up to 26% annually.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="section-security" class="bg-dark-2 section-dark text-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="subtitle wow fadeInUp mb-3">Capital Security</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">How Do We Secure Capital?</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">We implement multiple layers of protection to ensure your investment is secure and protected at all times.</p>
+                        
+                        <div class="spacer-20"></div>
+                        
+                        <div class="security-item wow fadeInUp" data-wow-delay=".6s">
+                            <div class="number">1</div>
+                            <div class="content">
+                                <h4>Legal Protection</h4>
+                                <p>Binding agreements from Dubai Court provide legal security and enforcement for all investments.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-item wow fadeInUp" data-wow-delay=".8s">
+                            <div class="number">2</div>
+                            <div class="content">
+                                <h4>Comprehensive Agreements</h4>
+                                <p>Corporate Investment Agreements that clearly outline terms, conditions, and investor protections.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-item wow fadeInUp" data-wow-delay="1s">
+                            <div class="number">3</div>
+                            <div class="content">
+                                <h4>Security Cheques</h4>
+                                <p>Additional financial security through post-dated security cheques guaranteeing return payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="col-lg-5 offset-lg-1">
+                        <div class="wow scaleIn" data-wow-delay=".5s">
+                            <img src="images/misc/investment-security.jpg" class="img-fluid rounded-10" alt="Investment Security">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Income Sources Section -->
+        <section id="section-income" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="subtitle wow fadeInUp mb-3">Revenue Streams</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Source of Income</h2>
+                        <p class="lead mb-0 wow fadeInUp">Our multi-faceted approach to generating returns ensures consistent performance and growth.</p>
+                    </div>
+                </div>
+
+                <div class="spacer-single"></div>
+
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="de-box-cat wow fadeInUp">
+                            <i class="fa fa-chart-line id-color"></i>
+                            <h3>Investment Returns</h3>
+                            <p>Earnings derived from flying operations of our jet fleet and charter services, creating a steady revenue stream.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="de-box-cat wow fadeInUp" data-wow-delay=".2s">
+                            <i class="fa fa-plane id-color"></i>
+                            <h3>Aircraft Utilisation</h3>
+                            <p>Access to private jet services that can be monetised for personal, business and medical use, adding value beyond financial returns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="de-box-cat wow fadeInUp" data-wow-delay=".4s">
+                            <i class="fa fa-sync id-color"></i>
+                            <h3>Hybrid Model</h3>
+                            <p>Access to aviation services and high-yield returns driven by efficient fleet management and operational cost optimisations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="section-join" class="bg-dark-2 section-dark text-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="subtitle wow fadeInUp mb-3">Join Our Program</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Pioneering Hybrid Investment Opportunity</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">We specialize in transforming emerging opportunities into sustainable, high yield investments, ensuring long term growth and impact by executing precision driven investment strategies that drive value & innovation for our global clientele.</p>
+                        
+                        <div class="spacer-20"></div>
+                        
+                        <ul class="ul-check wow fadeInUp" data-wow-delay=".6s">
+                            <li>Quarterly Payouts of Secured Annual Returns</li>
+                            <li>Discounted Annual Free Flight Hours</li>
+                            <li>Competitive Pricing On Hourly Rates</li>
+                            <li>Asset-backed security for your investment</li>
+                        </ul>
+                        
+                        <div class="spacer-20"></div>
+                        
+                        <a href="#" class="btn-main wow fadeInUp" data-wow-delay=".8s">Request Investment Brochure</a>
+                    </div>
+                    
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="p-4 rounded-10 bg-dark wow fadeInRight" data-wow-delay=".5s">
+                            <form id="investment-form" class="form-border">
+                                <h3 class="mb-4">Investment Inquiry</h3>
+                                <div class="field-set mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="field-set mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="field-set mb-3">
+                                    <input type="text" name="phone" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="field-set mb-3">
+                                    <select name="investment_amount" class="form-control" required>
+                                        <option value="" selected disabled>Investment Amount</option>
+                                        <option value="50k-100k">$50,000 - $100,000</option>
+                                        <option value="100k-250k">$100,000 - $250,000</option>
+                                        <option value="250k-500k">$250,000 - $500,000</option>
+                                        <option value="500k+">$500,000+</option>
+                                    </select>
+                                </div>
+                                <div class="field-set mb-4">
+                                    <textarea name="message" class="form-control" placeholder="Additional Information"></textarea>
+                                </div>
+                                <button type="submit" class="btn-main w-100">Submit Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer begin -->
+        <footer class="text-light section-dark">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12">
+                        <div class="d-lg-flex align-items-center justify-content-between text-center">
+                            <div>
+                                <h3 class="fs-20">Address</h3>
+                                1250 Aviation Drive, Suite 300<br>
+                                San Francisco, CA 94128
+                            </div>
+                            <div>
+                                <img src="images/logo.webp" class="w-150px" alt=""><br>
+                                <div class="social-icons mb-sm-30 mt-4">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+
+                            </div>
+                            <div>
+                                <h3 class="fs-20">Contact Us</h3>
+                                T. +1 800 JET WING<br>
+                                M. charter@crystalwings.com
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            Copyright 2025 - Crystal Wings Private Jet Charter Services
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        
+        <!-- Javascript Files
+        ================================================== -->
+        <script src="js/vendors.js"></script>
+        <script src="js/Shashwathagroups.js"></script>
+        <script src="js/countdown-custom.js"></script>
+        <script src="js/custom-marquee.js"></script>
+
+    </div>
+</body>
+
+</html>

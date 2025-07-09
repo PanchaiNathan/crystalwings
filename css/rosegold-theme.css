@@ -1,0 +1,131 @@
+/* Rose Gold Theme Overrides */
+
+:root {
+  /* Body background colors for dark scheme */
+  --bg-dark-1: #2D1A1C; /* Deep rose gold background */
+  --bg-dark-2: #3A2326; /* Slightly lighter rose gold background */
+  --bg-dark-3: #4A2D30; /* Even lighter rose gold background */
+  --bg-dark-1-rgb: 45, 26, 28;
+  
+  /* Text colors */
+  --body-font-color-dark: rgba(255, 235, 230, 0.85); /* Lighter rose gold text for dark backgrounds */
+  --heading-font-color: #BD8C7D; /* Rose gold headings */
+  
+  /* Button colors */
+  --btn-hover-bg: #7D5D56; /* Secondary rose gold color for button hover */
+  
+  /* Border colors */
+  --border-color: rgba(189, 140, 125, 0.3); /* Subtle rose gold borders */
+  
+  /* Background colors */
+  --bg-color-even: #F5EBE9; /* Very light rose gold for even rows */
+  --bg-color-odd: #F9F2F0; /* Even lighter rose gold for odd rows */
+  --bg-light: #FDF7F5; /* Extremely light rose gold for light backgrounds */
+  --bg-grey: #F0E6E4; /* Light rose gold grey */
+}
+
+/* Additional styling for dark scheme */
+body.dark-scheme {
+  color: var(--body-font-color-dark);
+  background: var(--bg-dark-1);
+}
+
+/* Enhance headings with rose gold */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-font-color);
+}
+
+/* Add subtle rose gold glow to buttons */
+.btn-main {
+  box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* Add rose gold tint to card backgrounds */
+.bg-blur {
+  background: rgba(var(--bg-dark-1-rgb), 0.7) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+}
+
+/* Add rose gold tint to overlays */
+.sw-overlay {
+  background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.2) 0%, rgba(var(--secondary-color-rgb), 0.3) 100%);
+}
+
+/* Enhance links with rose gold hover */
+a:hover {
+  color: var(--primary-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* Ensure header is transparent by default */
+header.transparent {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* Make sure the header elements are visible on transparent background */
+header.transparent #mainmenu a {
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure buttons are visible on transparent header */
+header.transparent .btn-main {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add rose gold border to inputs on focus */
+input:focus, textarea:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* Add rose gold scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Add smooth transition to all header states */
+header {
+  transition: all 0.3s ease !important;
+}
+
+/* Transparent Header on Scroll */
+header.smaller {
+  background: rgba(45, 26, 28, 0.7) !important; /* Using var(--bg-dark-1) with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.3) !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add subtle rose gold glow to header on scroll */
+header.smaller::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, transparent, rgba(var(--primary-color-rgb), 0.5), transparent);
+  opacity: 0.5;
+}
+
+/* Ensure logo is visible on transparent header */
+header.smaller .logo-scroll {
+  opacity: 1;
+}
