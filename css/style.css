@@ -11195,7 +11195,7 @@ img.anim-up-down {
 }
 
 .fly-animation {
-  animation: fly-animation 3s ease-in-out infinite;
+  animation: fly-animation 6s ease-in-out infinite;
 }
 
 @keyframes fly-animation {
